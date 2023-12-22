@@ -1,0 +1,24 @@
+<div class="table-task table">
+    <table>
+        <thead>
+            <tr class="table table-hover">
+                <th class="responsividade">#</th>
+                <th>Transacción</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of tasks">
+                <td class="responsividade" *ngIf="task.description === 'DEPOSIT'">
+                    <img class="iconTransactionPlus"
+                        src="../../../../assets/task/plus-circle-fill.svg" alt="Icono positivo">
+                </td>
+                <td class="responsividade" *ngIf="task.description === 'TRANSFER' || task.description === 'WITHDRAW'">
+                    <img class="iconTransactionMinus" src="../../../../assets/task/dash-circle-fill.svg"
+                    alt="Icono negativo">  
+                </td>   
+                <td>{{ task.description }}</td>
+                <td>{{ task.value | currency:'USD':'symbol':'1.2-2'}}</td>
+        </tbody>
+    </table>
+</div>

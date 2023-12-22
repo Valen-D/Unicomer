@@ -1,0 +1,57 @@
+<div id="window">
+
+    <div id="left">
+        <h1><span id="span1">Bienvenidos a</span><span id="span2"> Unicomer</span></h1>
+    </div>
+
+    <div id="right">
+        <div class="container mt-5" id="container-login">
+            <h2>LOGO</h2>
+        
+            <form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+        
+              <div class="form-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" class="form-control" formControlName="username" required>
+                <span *ngIf="validatorMessage('username')">
+                  El campo nombre es obligatorio.
+                </span>
+              </div>
+        
+              <div class="form-group">
+                <label for="password">Clave</label>
+                <input type="password" id="password" name="password" class="form-control" formControlName="password" required>
+                <span *ngIf="validatorMessage('password')">
+                  El campo contraseña es obligatorio.
+                </span>
+                <span *ngIf="validatorLengthMessage('password')">
+                  La contraseña debe tener al menos 8 caracteres.
+                </span>
+              </div>
+
+              <div class="form-group">
+                <label for="confirmPassword">Confirmar Clave</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" formControlName="confirmPassword" required>
+                <span *ngIf="validatorMessage('confirmPassword')">
+                  El campo contraseña es obligatorio.
+                </span>
+                <span *ngIf="validatorLengthMessage('confirmPassword')">
+                  La contraseña debe tener al menos 8 caracteres.
+                </span>
+                <span *ngIf="validatorConfirmPassMessage()">
+                  La contraseña confirmada no coincide con la contraseña.
+                </span>
+              </div>
+        
+              <button type="submit">
+                Registrarse
+              </button>
+            </form>
+
+            <a routerLink="/login">
+              <img src="../../../assets/register/arrow-left.png" alt="">
+              Volver al login
+            </a>
+          </div>
+    </div>
+</div>

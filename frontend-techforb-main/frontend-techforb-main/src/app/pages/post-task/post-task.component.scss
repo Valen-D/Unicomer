@@ -1,0 +1,18 @@
+h1 {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.container-form {
+    width: 70vw;
+}
+
+.form-group {
+    margin-top: 15px;
+}
+
+@media (max-width: 562px) {
+    .container-form {
+        width: 60vw;
+    }
+}

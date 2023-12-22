@@ -1,0 +1,31 @@
+<div class="container-form">
+
+    <h1>Registrar Tarjeta</h1>
+    <form (ngSubmit)="onSubmit()" [formGroup]="cardForm">
+
+        <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" class="form-control" formControlName="name" required>
+        </div>
+
+        <div class="form-group">
+        <label for="number">Numero</label>
+        <input type="text" id="number" class="form-control" formControlName="number" required>
+        </div>
+    
+
+        <div class="form-group">
+        <label for="fecha">Fecha de caducidad</label>
+        <input type="text" id="fecha" class="form-control" formControlName="fecha" required>
+        </div>
+        
+
+        <div class="form-group">
+        <label for="codigo">Código de seguridad</label>
+        <input type="text" id="codigo" class="form-control" formControlName="codigo" required>
+        </div>
+        <button type="submit" class="btn btn-success mt-2">
+        Registrar
+        </button>
+    </form>
+</div>

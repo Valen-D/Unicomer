@@ -1,0 +1,35 @@
+<div id="window">
+
+    <div id="left">
+        <h1><span id="span1">Bienvenidos a</span><span id="span2"> Unicomer</span></h1>
+    </div>
+
+    <div id="right">
+        <div class="container mt-5" id="container-login">
+            <h2>LOGO</h2>
+        
+            <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+        
+              <div class="form-group">
+                <label for="text">Usuario</label>
+                <input type="text" id="username" class="form-control" formControlName="username" required>
+                <span [hidden]="hideMessageErrorUsername" class="erro">Usuario no existe</span>
+              </div>
+        
+              <div class="form-group">
+                <label for="password">Clave</label>
+                <input type="password" id="password" class="form-control" formControlName="password" required>
+                <span [hidden]="hideMessageErrorPassword" class="erro">Contraseña incorrecta</span>
+              </div>
+        
+              <button type="submit" >
+                Ingressar
+              </button>
+            </form>
+
+            <a routerLink="/register">
+              ¿No tienes cuenta? Pulse aquí
+            </a>
+          </div>
+    </div>
+</div>

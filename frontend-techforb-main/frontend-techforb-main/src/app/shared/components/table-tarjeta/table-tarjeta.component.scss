@@ -1,0 +1,51 @@
+.table-tarjeta {
+    background-color: white;
+    padding: 20px 13px;
+    width: 80%;
+    box-shadow: 0px 0px 2px #c4c8c5;
+    border-radius: 8px;
+}
+
+td, th {
+    width: 175px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+th {
+    color: rgb(31, 40, 92);
+}
+
+tr {
+    border-color: #c4c8c5;
+}
+
+@media (max-width: 763px) {
+    .table-tarjeta {
+        width: 60vw;
+    }
+
+    th, td {
+        font-size: 12px;
+    };
+}
+
+@media (max-width: 695px) {
+    .responsividade {
+        display: none;
+    }
+
+    th, td {
+        font-size: 11px;
+    };
+}
+
+@media (max-width: 420px) {
+    .responsividade {
+        display: none;
+    }
+
+    th, td {
+        font-size: 11px;
+    };
+}

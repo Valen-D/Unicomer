@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@900&family=Poppins:wght@400;600&display=swap');
+
+#window {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+#left {
+    background-image: url('../../../assets/login/login_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+#span1 {
+    color: grey;
+}
+
+#span2 {
+    color: rgb(31, 40, 92);
+}
+
+#right {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    padding: 0px 20px;
+    background-color: rgb(31, 40, 92);
+    color: white;
+}
+
+#container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+h2{ 
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    background-color: rgb(31, 40, 92);
+    border-color: rgb(31, 40, 92);
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    margin-top: 10px;
+    color: white;
+}
+
+input:focus {
+    background-color: rgb(31, 40, 92);
+    border-color: rgb(31, 40, 92);
+    border-bottom: 1px solid white;
+    box-shadow: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 0px;
+}
+
+button {
+    background-color: white;
+    padding: 8px 0px;
+    border: none;
+    color: rgb(31, 40, 92);
+    width: 100%;
+    border-radius: 20px;
+   
+}
+
+button:hover {
+    background-color: rgb(31, 40, 200);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.erro {
+    color: red;
+}
+
+@media (max-width: 1211px) {
+    #container-login {
+        padding: 30px 50px;
+    }
+}
+
+@media (max-width: 887px) {
+    #container-login{
+        padding: 30px 30px;
+    }
+}
+
+@media (max-width: 803px) {
+    #left{
+        display: none;
+    }
+    #right{
+        width: 100vw;
+    }
+}

@@ -1,0 +1,21 @@
+.container-router {
+    overflow-y: scroll;
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color:#fbfbfb;
+    padding-left: 135px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+
+@media (max-width: 430px) {
+    .container-router {
+        left: 0px;
+    }
+  }

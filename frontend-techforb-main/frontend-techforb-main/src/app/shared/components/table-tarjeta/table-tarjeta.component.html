@@ -1,0 +1,24 @@
+<div class="table-tarjeta table">
+    <table>
+        <thead>
+            <tr class="table table-hover">
+                <th class="responsividade">Nombre</th>
+                <th>Numero</th>
+                <th>Fecha de caducidad</th>
+                <th>Código de seguridad</th>
+                <th class="responsividade">Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tarjeta of tarjetas">     
+                <td class="responsividade">{{ tarjeta.name }}</td>
+                <td>{{ tarjeta.number }}</td>
+                <td>{{ tarjeta.expirationDate }}</td>
+                <td>{{ tarjeta.securityCode }}</td>
+                <td class="responsividade">
+                    <img src="../../../../assets/tarjeta/three-dots.svg" alt="Icono de opciones">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
+
+body {
+  position: relative;
+}
+
+.sidenav {
+  position: fixed;
+  background-color: white;
+  transition: all 0.5s ease; 
+  z-index: 2;
+  height: 100vh;
+  width: 100px;
+}
+
+.sidenav-aberto {
+  width: 200px;
+}
+ 
+.img-toggler {
+  margin: 0px;
+}
+
+.btn.btn-link:hover{
+  background-color: rgba(255, 255, 255, 0.521);
+  border-radius: 8px;
+}
+
+.sidenav-container {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 13px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.sidenav-links {
+  list-style: none;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.sidenav-links-item {
+  margin-top: 25px;
+}
+
+.sidenav-nav-link {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.sidenav-nav-link:hover {
+  font-weight: 500;
+}
+
+.sidenav-nav-link-selecionado {
+  background-color: rgba(255, 255, 255, 0.521);
+  font-weight: 500;
+  padding: 8px 6px;
+  border-radius: 8px;
+}
+
+#btn-sair {
+  margin-top: 40px;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  border-color: black;
+  font-weight: 200;
+  font-size: 14px;
+}
+#btn-sair:hover {
+  color: black;
+}
+
+img {
+  margin-bottom: 6px;
+  margin-right: 7px;
+}
+
+@media (max-width: 430px) {
+  .sidenav {
+    width: 80px;
+  }
+}
